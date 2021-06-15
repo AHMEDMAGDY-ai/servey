@@ -1,0 +1,396 @@
+<html>
+ <head>
+    <title> Survey </title>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+     <style>
+         body{
+             background-image:url(photo/11.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+             margin: 0;
+         }
+         #logo{
+             min-width: 10%;
+             max-width: 10%;
+             display: block;
+             margin: 0px auto;
+             margin-top: 1%;
+             
+             /* for chrome and safari*/
+            -webkit-animation-duration: 1s;
+            -webkit-animation-name: slidein;
+
+            
+
+            
+         }
+         @-webkit-keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 45%;
+                width: 100%;
+            }
+        }
+
+        
+          
+         #h3{
+             text-align: center;
+         }
+         #hr{
+             border-color: black;
+             
+         }
+         
+         #btnScrolltotop{
+             position: fixed;
+             right: 1px;
+             bottom: 10px;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             background: red;
+             box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.25);
+             color: white;
+             border: none;
+             z-index: 99;
+             
+         }
+         
+         #btnScrolltotop:active{
+             background-color: gray;
+         } 
+         
+         
+         
+     </style>
+      <body>
+          
+          
+          
+              <nav class="navbar navbar">
+                        <img alt="wonder travel" src="photo/12.jpg" id="logo">
+                        <h3 id="h3">Wonder travel</h3>  
+                  
+            </nav>
+          <hr id="hr">
+          
+          
+          
+            <div class=" col-md-12 row container">
+                <div class="col-md-6">
+                    <form class="form-horizontal">
+                          <div class="form-group form-group-sm">
+                            <label class="col-sm-3 control-label">Campany name : </label>
+                            <div class="col-sm-8">
+                              <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Campany name">
+                            </div>
+                          </div>
+                        </form>
+                    
+                    <form class="form-horizontal">
+                          <div class="form-group form-group-sm">
+                            <label class="col-sm-3 control-label">Mobile number : </label>
+                            <div class="col-sm-5">
+                              <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Mobile number">
+                            </div>
+                          </div>
+                        </form>
+                    <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Email : </label>
+                            <div class="col-sm-8">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                          </div>
+                    </form>
+                    
+                    
+              
+              </div>
+                <section>
+            <div class="col-md-6">
+              <form class="form-horizontal">
+                  <div class="form-group form-group-sm">
+                    <label class="col-md-5 control-label">Name of the responsible manager : </label>
+                    <div class="col-md-7">
+                      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Name of the responsible manager">
+                    </div>
+                  </div>
+                </form>
+                
+                <form class="form-horizontal">
+                          <div class="form-group form-group-sm">
+                            <label class="col-md-5 control-label"> Another Mobile number : </label>
+                            <div class="col-md-5">
+                              <input class="form-control" type="text" id="formGroupInputSmall" placeholder=" Another Mobile number">
+                            </div>
+                          </div>
+                        </form>
+                
+              </div>
+              </section>  
+          </div>
+          
+         <div class="row container" style="margin-top: 10%;">
+                        <div class="col-md-12">
+                          <form class="form-horizontal">
+                                  <div class="form-group form-group-sm">
+                                    <label class="col-md-3 control-label" for="formGroupInputSmall">How satisfied are you with the NDC system?</label>
+                                    <div class="col-md-8">
+                                      <label class="radio-inline">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 <br> Very weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 <br> Weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 <br> Acceptable
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4 <br> good
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5 <br> very good 
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 6 <br> Excellent
+                                            </label>
+                                        <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                                    </div>
+                                  </div>
+                                </form>
+                          </div>
+
+                    </div>
+          
+          
+          <div class="row container">
+                        <div class="col-md-12">
+                          <form class="form-horizontal">
+                                  <div class="form-group form-group-sm">
+                                    <label class="col-md-3 control-label" for="formGroupInputSmall">How satisfied are you with the NDC pricing?</label>
+                                    <div class="col-md-8">
+                                      <label class="radio-inline">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 <br> Very weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 <br> Weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 <br> Acceptable
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4 <br> good
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5 <br> very good 
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 6 <br> Excellent
+                                            </label>
+                                        <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                                    </div>
+                                  </div>
+                                </form>
+                          </div>
+
+                    </div>
+          
+          
+            
+              <div class="col-md-6">
+                        <label>Have you been dealing with other online reservation systems?</label>
+                        <div class="col-md-12">
+                          <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> YES 
+                                </label>
+                                <label class="radio-inline" style="margin-left: 30%;">
+                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> NO  
+                                </label>
+                            <br>
+                            <textarea class="form-control" rows="3" placeholder="Remember the name?"></textarea>
+                        </div>
+                      
+                    </div>
+          
+          
+          <div class="row container" >
+          <div class="col-md-6" style="margin-top: 2%;">
+                        <label>Have you had problems using the NDC?</label>
+                        <div class="col-md-12">
+                          
+                            <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                        </div>
+                      
+                    </div>
+          </div>
+          
+          <div class="row container">
+                        <div class="col-md-12" style="margin-top: 2%;">
+                          <form class="form-horizontal">
+                                  <div class="form-group form-group-sm">
+                                    <label class="col-md-4 control" for="formGroupInputSmall">How satisfied are you with the technical support department?</label>
+                                    <div class="col-md-8">
+                                      <label class="radio-inline">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 <br> Very weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 <br> Weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 <br> Acceptable
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4 <br> good
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5 <br> very good 
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 6 <br> Excellent
+                                            </label>
+                                        <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                                    </div>
+                                  </div>
+                                </form>
+                          </div>
+
+                    </div>
+          
+          <div class="row container">
+                        <div class="col-md-12" style="margin-top: 2%;">
+                          <form class="form-horizontal">
+                                  <div class="form-group form-group-sm">
+                                    <label class="col-md-4 control" for="formGroupInputSmall">How satisfied are you with the cancellation and modification department?</label>
+                                    <div class="col-md-8">
+                                      <label class="radio-inline">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 <br> Very weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 <br> Weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 <br> Acceptable
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4 <br> good
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5 <br> very good
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 6 <br> Excellent
+                                            </label>
+                                        <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                                    </div>
+                                  </div>
+                                </form>
+                          </div>
+
+                    </div>
+          
+          <div class="row container">
+                        <div class="col-md-12" style="margin-top: 2%;">
+                          <form class="form-horizontal">
+                                  <div class="form-group form-group-sm">
+                                    <label class="col-md-4 control" for="formGroupInputSmall">How satisfied are you with the complaints and suggestions section?</label>
+                                    <div class="col-md-8">
+                                      <label class="radio-inline">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1 <br> Very weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 <br> Weak
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3 <br> Acceptable
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4 <br> good
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5 <br> very good 
+                                            </label>
+                                            <label class="radio-inline" style="margin-left: 5%;">
+                                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 6 <br> Excellent
+                                            </label>
+                                        <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                                    </div>
+                                  </div>
+                                </form>
+                          </div>
+
+                    </div>
+          
+          <div class="row container" >
+          <div class="col-md-6" style="margin-top: 2%;">
+                        <label>What are the disadvantages NDC What are the advantages of the system?</label>
+                        <div class="col-md-12">
+                          
+                            <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                        </div>
+                      
+                    </div>
+          </div>
+          
+          <div class="row container" >
+          <div class="col-md-6" style="margin-top: 2%;">
+                        <label>Do you have suggestions for developing the NDC system ?</label>
+                        <div class="col-md-12">
+                          
+                            <textarea class="form-control" rows="3" placeholder="Add Comment...."></textarea>
+                        </div>
+                      
+                    </div>
+          </div>
+          
+          <button id="btnScrolltotop">
+          <i class="material-icons" onclick="topFunction()">arrow_upward</i>
+          </button>
+          
+          <div class="center-block" style="text-align: center;margin-top: 5%;margin-bottom: 5%;">
+          
+          <button type="button" class="btn btn-success btn-lg">Submit</button>
+          </div>
+          
+          <script>
+                //Get the button
+                var mybutton = document.getElementById("btnScrolltotop");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+          </script>
+  
+          
+      </body>
+    </head>
+</html>
+
